@@ -38,6 +38,8 @@ public class DiningAdapter extends BaseExpandableListAdapter {
     private HashMap<String, List> _listDataChild;
     private List<List<Boolean>> availList;
     private List<Dining> data;
+    File dining_data;
+    File dining_timestamp;
 
     public DiningAdapter(Context context, List<String> listDataHeader,
                                  HashMap<String, List> listChildData, List<List<Boolean>> availList, List<Dining> data) {
@@ -46,7 +48,18 @@ public class DiningAdapter extends BaseExpandableListAdapter {
         this._listDataChild = listChildData;
         this.availList = availList;
         this.data = data;
-        if(data == null || HTTPNetwork.isOnline(context) == false){
+        dining_data = new File(context.getFilesDir(), "Dining_data.txt");
+        dining_timestamp = new File(context.getFilesDir(), "Dining_timestamp.txt");
+        /*if(data == null || HTTPNetwork.isOnline(context) == false){
+            for(int i = 0;i < availList.size();i++){
+                List<Boolean> temp = new ArrayList<Boolean>();
+                for(int j = 0;j < availList.get(i).size();j++){
+                    temp.add(false);
+                }
+                availList.set(i,temp);
+            }
+        }*/
+        if(data == null){
             for(int i = 0;i < availList.size();i++){
                 List<Boolean> temp = new ArrayList<Boolean>();
                 for(int j = 0;j < availList.get(i).size();j++){
@@ -212,7 +225,7 @@ public class DiningAdapter extends BaseExpandableListAdapter {
         if((Boolean)availList.get(groupPosition).get(childPosition-1)) {
             txtListAvail.setText("AVAILABLE");
             txtListAvail.setTextColor(_context.getResources().getColor(R.color.availableText));
-        } else if(data == null || HTTPNetwork.isOnline(_context) == false){
+       } else if(data == null || !dining_data.exists() || !dining_timestamp.exists()){
             txtListAvail.setText("NO NETWORK");
             txtListAvail.setTextColor(Color.RED);
         } else {

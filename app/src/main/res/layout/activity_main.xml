@@ -8,7 +8,7 @@
     <android.support.design.widget.TabLayout
         android:id="@+id/sliding_tabs"
         android:layout_width="match_parent"
-        android:layout_height="45dp"
+        android:layout_height="0dp"
         app:tabMode="fixed"
         android:background="@drawable/dining_box"
         style="@style/MyCustomTabLayout"

@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
         //The FragmentParser will take in and keep track of all of the fragments and tab titles
         //Enter the number of fragments being entered. Used for threading synchronization
-        final FragmentParser frag = new FragmentParser(4);
+        final FragmentParser frag = new FragmentParser(1);
 
         List<Thread> startupThreads = new ArrayList<Thread>();
         //ADD FRAGMENT PAGES (ACTIVITIES) HERE, start a new thread each time for start up performance:
@@ -45,24 +45,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 frag.addFragment(DiningFragment.newInstance(context), "Dining",1);
-            }
-        }));
-        startupThreads.add(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                frag.addFragment(BlankFragment.newInstance(2,context), "Tab 2",2);
-            }
-        }));
-        startupThreads.add(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                frag.addFragment(BlankFragment.newInstance(3,context), "Tab 3",3);
-            }
-        }));
-        startupThreads.add(new Thread(new Runnable() {
-            @Override
-            public void run() {
-                frag.addFragment(BlankFragment.newInstance(4,context), "Tab 4",4);
             }
         }));
         //Start the fragment threads and wait for them to load
@@ -85,22 +67,6 @@ public class MainActivity extends AppCompatActivity {
         //Create the FragmentPagerAdapter from the FragmentParser to generate tabs and pass it to the ViewPager to link the tabs
         viewPager.setAdapter(new MainFragmentPagerAdapter(getSupportFragmentManager(), MainActivity.this, frag));
 
-        // Get the TabLayout and give the TabLayout the ViewPager to generate the tabs
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.sliding_tabs);
-        tabLayout.setupWithViewPager(viewPager);
-        applyFontedTab(this, viewPager, tabLayout);
-
-
-    }
-
-    public static void applyFontedTab(Activity activity, ViewPager viewPager, TabLayout tabLayout) {
-        for (int i = 0; i < viewPager.getAdapter().getCount(); i++) {
-            LinearLayout l = (LinearLayout) activity.getLayoutInflater().inflate(R.layout.tab, null);
-            TextView tv = (TextView)l.findViewById(R.id.tab_view);
-            tv.setText(viewPager.getAdapter().getPageTitle(i));
-            tabLayout.getTabAt(i).setCustomView(l);
-
-        }
     }
 
 }

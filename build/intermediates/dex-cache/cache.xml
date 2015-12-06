@@ -2,67 +2,67 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\libs\gson-2.3.1.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\gson-2.3.1-e05f295eb0aa534d1aae56258c7211146be3bb8e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\internal_impl-22.2.0-4b63b51bacdf0c01cb2242f76a6bef1340d8c509.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\libs\okhttp-2.4.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\okhttp-2.4.0-8d712dee4694018fe8811c27b1687c51ff3c1314.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\classes-5d0344838a09836e7d06ff7f0474de7f704a6af8.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sam\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
+        jar="C:\Users\Sam\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\22.2.0\support-annotations-22.2.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="66b42a1f3eb7676070b7ef7f14b603483aecbee1">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-ba55cbf8b11913f881ca0ec087879e20b1cd43e7.jar" />
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\support-annotations-22.2.0-e230cbe51606e671ede84498948e94d065ad4cdb.jar" />
     </item>
     <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\classes-885c41bdc2a5ba67eb32546a1a92214df9cd709e.jar" />
-    </item>
-    <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\libs\okio-1.4.0.jar"
+        jar="C:\Users\Sam\Network\app\libs\okio-1.4.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="5b72bf48563ea8410e650de14aa33ff69a3e8c35">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\okio-1.4.0-4fb3a4aca7033c9b200aabbef8f8ebddbd8f0b21.jar" />
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\okio-1.4.0-1525f05cf7ab1922873e81317a3506b4f24bdc69.jar" />
     </item>
     <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jar="C:\Users\Sam\Network\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\classes.jar"
         jumboMode="false"
         revision="22.0.1"
-        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\classes-6cd0950f018d1f79851d4187c16be9ef595e1fe6.jar" />
+        sha1="1ee588ff2c4daf7b97c1cbf922a6c7f027285c2f">
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\classes-79a7434fb295d0094adc12675f961331b389e09a.jar" />
     </item>
     <item
-        jar="C:\Users\Sam\Dropbox\ExploreRU\app\libs\retrofit-1.9.0.jar"
+        jar="C:\Users\Sam\Network\app\libs\gson-2.3.1.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\gson-2.3.1-19f852f51746f34f0a0432531d15f4e6d63b6333.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sam\Network\app\libs\retrofit-1.9.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="a681c044244d9fc375198588297a39ba78028423">
-        <dex dex="C:\Users\Sam\Dropbox\ExploreRU\app\build\intermediates\pre-dexed\debug\retrofit-1.9.0-ac98767020e1f7658097ab642ffcbf161a2e543d.jar" />
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\retrofit-1.9.0-3a3cb931643097fad21adad0ac0846918a27a94d.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sam\Network\app\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\jars\libs\internal_impl-22.2.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="57f2ab85c164ff1676ec64dee787981c046fab79">
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\internal_impl-22.2.0-1fa4e5dc5efcf281df5c5e973456438ad79b0728.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sam\Network\app\libs\okhttp-2.4.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="40340c0748190fe897baf7bffbc1b282734294e5">
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\okhttp-2.4.0-18854854948c5748926d2b9e7225969d581d85e9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sam\Network\app\build\intermediates\exploded-aar\com.android.support\design\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="fc63b820d54c8a27a3a614bdd93920e0076581c2">
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\classes-33084dc948d988db4c8a2c494385d13178e5d6aa.jar" />
+    </item>
+    <item
+        jar="C:\Users\Sam\Network\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\jars\classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="73753982da6bde518f3a4c6b372749981d14d1a0">
+        <dex dex="C:\Users\Sam\Network\app\build\intermediates\pre-dexed\release\classes-7ec0964f43d054f9aa558c4e0f58d7ab6a33aebf.jar" />
     </item>
 
 </items>

@@ -59,7 +59,9 @@ public class DiningAdapter extends BaseExpandableListAdapter {
                 availList.set(i,temp);
             }
         }*/
-        if(data == null){
+        Log.i("Dining Display","data = null? "+new Boolean(data == null));
+        Log.i("Dining Display","((!dining_data.exists() || !dining_timestamp.exists()) && !HTTPNetwork.isOnline(_context))? "+new Boolean(((!dining_data.exists() || !dining_timestamp.exists()) && !HTTPNetwork.isOnline(_context))));
+        if(data == null || ((!dining_data.exists() || !dining_timestamp.exists()) && !HTTPNetwork.isOnline(_context))){
             for(int i = 0;i < availList.size();i++){
                 List<Boolean> temp = new ArrayList<Boolean>();
                 for(int j = 0;j < availList.get(i).size();j++){
@@ -225,7 +227,7 @@ public class DiningAdapter extends BaseExpandableListAdapter {
         if((Boolean)availList.get(groupPosition).get(childPosition-1)) {
             txtListAvail.setText("AVAILABLE");
             txtListAvail.setTextColor(_context.getResources().getColor(R.color.availableText));
-       } else if(data == null || !dining_data.exists() || !dining_timestamp.exists()){
+       } else if(data == null || ((!dining_data.exists() || !dining_timestamp.exists()) && !HTTPNetwork.isOnline(_context))){
             txtListAvail.setText("NO NETWORK");
             txtListAvail.setTextColor(Color.RED);
         } else {

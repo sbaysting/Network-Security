@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <color name="stdTextColor">#666666</color>
+    <color name="stdBackgroundColor">#FF4343</color>
+    <color name="stdDividerColor">#ffdadada</color>
+    <color name="availableText">#ff00da2d</color>
+    <color name="tabIndicatorColor">#fff700dd</color>
+
+</resources>
